@@ -5,12 +5,14 @@ on: [ push ]
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
+
+    script:
+      - cd core
+
     steps:
       - uses: actions/checkout@v3
       - name: Python set up
         uses: actions/setup-python@v3
-      - name: go to core folder
-        uses: cd core
       - name: deps installation
         run: make deps
       - name: make api tests
