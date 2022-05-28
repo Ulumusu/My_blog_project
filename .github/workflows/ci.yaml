@@ -10,7 +10,7 @@ jobs:
       - name: Python set up
         uses: actions/setup-python@v3
       - name: go to core folder
-        script: cd core
+        uses: cd core
       - name: deps installation
         run: make deps
       - name: make api tests
