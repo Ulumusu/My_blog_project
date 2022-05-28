@@ -1,8 +1,10 @@
 .PHONY: deps test
 
+hello:
+	echo "Hello, test make"
+
 deps:
-	cd core
 	pip install -r requirements.txt;
-		
+
 test:
-    python -m unittest discover -p '*tests.py' -v
+	python manage.py test
