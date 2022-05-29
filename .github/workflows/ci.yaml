@@ -1,0 +1,32 @@
+name: Package Project
+
+on: [ push ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+      - name: Python set up
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8.10'
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: Say hello
+        run: |
+          cd ${{ github.workspace }}
+          cd backend/core
+          make hello
+      - name: deps installation
+        run: |
+          cd ${{ github.workspace }}
+          cd backend/core
+          make deps
+      - name: make api tests
+        run: |
+          cd ${{ github.workspace }}
+          cd backend/core
+          make test

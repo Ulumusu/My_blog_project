@@ -1,0 +1,22 @@
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.resume-elements {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 1rem;
+    text-align: justify;
+}
+.resume-email {
+    position: relative;
+    max-height: 50px;
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #000000;
+}
+.element-title {
+    text-align: center;
+}

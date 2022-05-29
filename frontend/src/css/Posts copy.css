@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+.posts-list {
+    background-color: #ffffff;
+    margin: 10px;
+}
+.posts-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.post-in-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0.5rem;
+    text-align: justify;
+    min-height: 20ch;
+}
+.photo-name-date {
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    min-height:20ch;
+    background-position: center;
+}
+.name-date {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.post-title {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.post-beginning {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.post-in-list:hover .post-beginning{
+    opacity: 1;
+    transition: 850ms;
+}
+.post-in-list:hover {
+    transition: 850ms;
+    box-shadow: 0px 2px 50px 10px rgb(68, 68, 68);
+}
+.post-date {
+    color: white;
+}

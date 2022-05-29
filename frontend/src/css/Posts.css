@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.posts-list {
+    margin: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    margin: 0.5rem;
+    background-position: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+
+.card-title-date {
+    padding: 1.5rem;
+}
+.card-date{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    opacity: 0;
+}
+.card-title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transform: translateY(120%);
+}
+.card-body {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+    transition: 850ms;
+}
+.card:hover .card-title {
+    transform: translateY(0);
+    transition: 850ms;
+}
+.card:hover .card-date {
+    opacity: 1;
+    transition: 1500ms;
+}

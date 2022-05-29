@@ -1,0 +1,16 @@
+.header-container {
+    background-color: #000000;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 0.25vmin);
+    color: white;
+    z-index: 99;
+
+}
+.blogName {
+    margin: auto;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
