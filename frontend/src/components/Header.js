@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='header-container'>
       <Panel/>
-      <h1 className='blogName'>UluBlog</h1>
+      <h1 className='blogName'>Blog</h1>
     </div>
   );
 };
