@@ -19,7 +19,7 @@ class PostTest(unittest.TestCase):
                 'start_text': '/html/body/div/div/div[2]/div/div/div[2]/p[1]'               
             }
         }
-        self.blogTitle = 'UluBlog'
+        self.blogTitle = 'Blog'
         self.blogTitleAddress = '/html/body/div/div/div[1]/div/h1'
         self.driver = webdriver.Firefox()
         self.driver.get('http://localhost:3000/')
